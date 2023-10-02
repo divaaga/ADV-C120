@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <title>CASE STUDY GOOGLE LENS VS MOBILENET </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+        <u><h1 class="heading">CASE STUDY</h1></u>
+        <br><br>
+        <center>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+                <h4>GOOGLE LENS</h4>  
+                <br>
+                <h4>VS</h4>
+                <br>
+                <h4>MOBILENET MODEL</h4>
+                
+            </div>
+          </center>
+          <br><br>
+        <ol>
+           <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="water_bottle.png">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENSE</b> - 
+                    <span id="water_b_google"></span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>MOBILENET MODEL</b> - 
+                    <span id="water_b_mobilenet"></span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4 class="mini_result_water_bottle"></h4>
+                </div>
+           </div> 
+        
+
+        
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="keyboard.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="keyboard_google"></span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="keyboard_mobilenet"></span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <hr>
+                     <h4 class="mini_result_keyboard"></h4>
+                 </div>
+            </div> 
+         
+
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="pen.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="pen_google"></span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="pen_mobilenet"></span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <hr>
+                     <h4 class="mini_result_pen"></h4>
+                 </div>
+            </div> 
+         
+        
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="mouse.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="mouse_google"></span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="mouse_mobilenet"></span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <hr>
+                     <h4 class="mini_result_mouse"></h4>
+                 </div>
+            </div> 
+         
+
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="fan.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="fan_google"></span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="fan_mobilenet"></span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <hr>
+                     <h4 class="mini_result_fan"></h4>
+                 </div>
+            </div> 
+         
+
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="shirt.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="shirt_google"></span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="shirt_mobilenet"></span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <hr>
+                     <h4 class="mini_result_shirt"></h4>
+                 </div>
+            </div> 
+         </ol>
+
+    </center>
+    <div class="copy_right_footer">
+      Developed by - Diva
+    </div>
+    <script src="main.js"></script>
+  </body>
+
+</html>
+
+
