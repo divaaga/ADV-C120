@@ -16,6 +16,7 @@ img {
     height: 300;
     margin: 30px;
     border-radius: 10px;
+    
 }
 
 .heading {
@@ -47,3 +48,22 @@ u {
     float : none;
     padding: 10px;
   }
+
+  span {
+    color : red;
+  }
+
+#result {
+  border-radius: 15px;
+  background-color: darkgrey;
+  text-align: center;
+  padding: 10px;
+  bottom: 100;
+  /* position: fixed; */
+  width: 500px;
+  height: 100;
+  margin: 40px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
